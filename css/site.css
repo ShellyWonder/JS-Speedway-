@@ -15,6 +15,7 @@ footer {
   background-color: var(--dark-color);
   padding-right: 1rem;
 }
+
 footer .social > a {
 }
 h1,
@@ -57,4 +58,9 @@ main > .container {
   left: 0;
   bottom: 0;
   width: 100%;
+}
+.projectLogo {
+  font-family: industry-inc-outline, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
