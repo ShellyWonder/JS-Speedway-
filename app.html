@@ -73,7 +73,9 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" target="_blank" href="#">Contact</a>
+              <a class="nav-link" target="_blank" href="/contact.html"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
@@ -81,13 +83,60 @@
     </nav>
     <!--Main section-->
     <main class="flex-shrink-0">
-      <div class="container row-cols-1 row-cols-lg-2">
-        <div class="row">
+      <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-lg-2">
           <!--left column instructions-->
-          <div class="col-4">
-            <h1 class="projectLogo">.JS Speedway</h1>
+          <div class="col-4 col border-end border-2">
+            <h1 class="logoFont">.JS Speedway</h1>
+            <h2>A Coding Project</h2>
+            <h4 class="lead">
+              Looping around the track at the speed of Javascript, this coding
+              exercise loops through and displays numbers 0 to 100 faster than
+              you can start your engine.
+            </h4>
+            <h2 class="mt-5 border-bottom border-3">Instructions</h2>
+            <p>
+              Enter a starting and ending value. Press the button. See your
+              results!
+            </p>
           </div>
-          <div class="col-8"></div>
+          <div class="col-8 col">
+            <div>
+              <h5>Enter values</h5>
+              <form class="row gy-2 gx-3">
+                <div class="col">
+                  <input
+                    id="startValue"
+                    type="number"
+                    class="form-control"
+                    placeholder="Start Value"
+                    value="0"
+                    aria-label="Start-Value"
+                  />
+                </div>
+
+                <div class="col">
+                  <input
+                    id="endValue"
+                    type="number"
+                    class="form-control"
+                    placeholder="Start Value"
+                    value="0"
+                    aria-label="End-Value"
+                  />
+                </div>
+                <div class="col-12 d-flex justify-content-end">
+                  <button
+                    id="btnSubmit"
+                    type="button"
+                    class="btn btn-dark btn-lg"
+                  >
+                    Drive the .js Speedway
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </main>
