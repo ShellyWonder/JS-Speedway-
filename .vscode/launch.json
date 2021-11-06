@@ -7,9 +7,9 @@
     {
       "type": "pwa-chrome",
       "request": "launch",
-      "name": "Open app.html",
-      "file": "f:\\Coder Foundry Files 2021\\JS-Speedway-\\app.html",
-      "url": "http://http://127.0.0.1:5500/"
+      "name": "Launch Chrome against localhost",
+      "url": "http://127.0.0.1:5500/",
+      "webRoot": "${workspaceFolder}"
     }
   ]
 }
