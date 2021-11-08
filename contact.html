@@ -89,119 +89,60 @@
         <h2 class="border-1 border-bottom border-dark">JUST ADD WONDER</h2>
         <body>
           <h1 class="text-center text-dark mb-2">Contact SJ</h1>
-          <div
-            class="
-              container
-              bg-light
-              border border-5 border-secondary
-
-              shadow-lg
-              pb-2
-              text-light
-            "
-          >
-            <!--<form action="mailto:someone@example.com" method="post" enctype="text/plain">-->
-            <form
-              action="mailto:contactSJ@sjwonder.com"
-              method="POST"
-              
-              data-netlify="true"
-              enctype="text/plain"
-            >
-              <div class="row mb-1">
-                <div class="col">
-                  <label class="form-label">First Name</label>
-                  <input
-                    type="text"
-                    name="firstName"
-                    class="form-control"
-                    placeholder="First name"
-                    aria-label="First name"
-                    required
-                  />
-                </div>
-                <div class="col">
-                  <label class="form-label">Last Name</label>
-                  <input
-                    type="text"
-                    name="lastName"
-                    class="form-control"
-                    placeholder="Last name"
-                    aria-label="Last name"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="row mb-1">
-                <div class="col">
-                  <label class="form-label">Email</label>
-                  <input
-                    type="email"
-                    name="email"
-                    class="form-control"
-                    placeholder="Email"
-                    aria-label="Email"
-                    required
-                  />
-                </div>
-                <div class="col">
-                  <label class="form-label">Phone (optional)</label>
-                  <input
-                    type="text"
-                    name="phone"
-                    class="form-control"
-                    placeholder="Phone"
-                    aria-label="Phone"
-                  />
-                </div>
-              </div>
-              <div class="row mb-1">
-                <div class="col">
-                  <label class="form-label">Subject</label>
-                  <input
-                    type="text"
-                    name="subject"
-                    class="form-control"
-                    placeholder="Subject"
-                    aria-label="Subject"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="row mb-1">
-                <div class="col">
-                  <label class="form-label">Message</label>
-                  <textarea
-                    type="text"
-                    name="message"
-                    class="form-control"
-                    placeholder="Message"
-                    aria-label="Message"
-                   required
-                  ></textarea>
-                  </div>
-                  <div class="row mb-1">
-                    
-                  <div class="row mb-1">
-                    <div class="col">
-                      <label class="form-label">File Upload</label>
-                      <textarea
-                        type="file"
-                        name="myFile"
-                        class="form-control"
-                        placeholder="Upload File"
-                        aria-label="Upload File"
-                        
-                      ></textarea>
-                      </div>
-                      <div class="col">
-                      <div data-netlify-recaptcha="true"></div>
-                        
-                      </div>
-
-              </div>
-              <button type="submit" class="btn btn-dark mt-2">Send Message</button>
-            </form>
+          
+            
+            <!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="6"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+								</form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="#">information@untitled.tld</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>(000) 000-0000 x12387</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>Address</h3>
+										<span>1234 Somewhere Road #5432<br />
+										Nashville, TN 00000<br />
+										United States of America</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
           </div>
       
           
