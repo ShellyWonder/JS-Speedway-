@@ -135,7 +135,7 @@
                   } else {
                     className = "odd";
                   }
-              
+              /*template literals do not appear correctly in prism. Please view the github repository for more information*/
                   templateRows += `<tr><td class="${className}">${number}</tr></tr>`;
                 }
                 document.getElementById("results").innerHTML = templateRows;
@@ -148,12 +148,62 @@
           </div>
           <!--CODE EXPLANATION-->
           <div class="col-lg-4">
-            <p>The code is structured in one function.</p>
-            <h5>Hello World</h5>
+            <p>The code is structured in three functions.</p>
+            <h5 class="logoFont">.JS Speedway</h5>
             <p>
-              Hello World is a function that displays an alert message of "Hello
-              World"
+              .JS Speedway is a simple program looping input integers and displaying them to the page. Even numbers are bolded. 
             </p>
+            <h4>Brief  code overview:</h4>
+            <ul>
+              <li>Initiation: 
+                <ul>
+               <li>event listener (located in the bottom &lt;script&gt; tag) is triggered by a "click" on the  "submit" button.
+               </li><br>
+<li>Inputs from the two user fields ("Start Value" and "End Value") are passed into the "Get Values" function</li><br>
+</ul>
+
+</li>
+<li>Validation: 
+  <ul>
+ <li>Inputs are checked to make certain they are integers (numbers) and not strings.</li> <br>
+ 
+<li>If inputs are numbers treated as strings, the program parses them to integers.</li><br>
+<li>If inputs are text, the system will alert the user, "You must enter numbers."</li> <br>
+</ul>
+</li>
+<li>Logic: 
+  <p>Within the "Generate Numbers" function, the following processes occur:
+  </p>
+    <ul>
+   <li>the "numbers" array is created</li> <br>
+   
+  <li>the "for" loop passes the start value and increments the number by one </li><br>
+  <li>the produced number is pushed to the "numbers" array.</li><br>
+  
+  <li>Meanwhile, produced numbers are re-introduced into the loop until the incremented number is equal to the End Value</li><br>
+  <li>the function returns the "numbers" array.</li><br>
+  </ul>
+  
+  </li>
+   
+</ul>
+
+</li>
+<ul>
+<li>Display: 
+  <ul>
+ <li>Inside the "for" loop: </li> <br>
+ <ul>
+<li>A boolean tests each number in the "numbers" array by dividing each number by 2 to determine whether the number is even. </li><br>
+<li>Numbers testing "true" are bolded.</li><br>
+<li>Numbers testing "false" are not bolded.</li><br>
+</ul>
+<li> "Template Rows" varible injects the "Number" varible (from the "Display Numbers" function) into the template literal </li><br>
+<li>Finally, "Template Rows" are published to the HTML via the "results" class</li><br>
+</ul>
+</ul>
+</li>
+            </ul>
           </div>
         </div>
       </div>
