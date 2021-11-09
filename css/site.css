@@ -75,3 +75,6 @@ main > .container {
   font-weight: 400;
   font-style: bold;
 }
+#form {
+  background-color: navy;
+}
