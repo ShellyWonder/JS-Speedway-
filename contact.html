@@ -61,7 +61,7 @@
               <a class="nav-link" href="/app.html">The App</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/code.html"
+              <a class="nav-link"  href="/code.html"
                 >The Code</a
               >
             </li>
@@ -74,7 +74,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" target="_blank" href="/contact.html"
+              <a class="nav-link active" aria-current="page" href="/contact.html"
                 >Contact</a
               >
             </li>
@@ -84,16 +84,16 @@
     </nav>
     <!--Main section-->
     <main class="flex-shrink-0">
-      <div class="container py-5 px-5 mt-5">
-        <h2 class="border-1 border-bottom border-dark">Contact SJ</h2>
-        <div class="row row-cols-1 row-cols-lg-2">
+      <div class="container fluid">
+        <h2 class="border-1 border-bottom border-dark mt-3">Contact SJ</h2>
+        <div class="row mt-4">
           <!--Contact form-->
-          <div class="col-lg-8">
+          <div class="col-12" id="form">
             <form
             action="POST"
             data-netlify="true"
             enctype="text/plain"
-            id="form"
+            
           >
             <div class="row mb-1">
               <div class="col">
@@ -168,81 +168,26 @@
                 ></textarea>
               </div>
               <div class="row mb-1">
-                <div class="col">
-                  <label class="form-label">Message</label>
-                  <textarea
-                    type="text"
-                    name="message"
+                <div class="col-3">
+                  <label class="form-label">Upload file</label>
+                  <input type="file"
+                    
+                    name="file"
                     class="form-control"
-                    placeholder="Message"
-                    aria-label="Message"
-                    required
-                  ></textarea>
+                    placeholder="Upload file"
+                    aria-label="myFile"
+                    
+                  ></input>
                 </div>
+               
+                <div class="col-8 justify-content-end" data-netlify-recaptcha="true"></div>
             </div>
-            <button type="submit" class="btn btn-primary mt-2">Send message</button>
+            <button type="submit" class="btn btn-dark mt-2">Send message</button>
           </form>
             
           </div>
           <!--CODE EXPLANATION-->
-          <div class="col-lg-4">
-            <p>The code is structured in three functions.</p>
-            <h5 class="logoFont">.JS Speedway</h5>
-            <p>
-              .JS Speedway is a simple program looping input integers and displaying them to the page. Even numbers are bolded. 
-            </p>
-            <h4>Brief  code overview:</h4>
-            <ul>
-              <li>Initiation: 
-                <ul>
-               <li>event listener (located in the bottom &lt;script&gt; tag) is triggered by a "click" on the  "submit" button.
-               </li><br>
-<li>Inputs from the two user fields ("Start Value" and "End Value") are passed into the "Get Values" function</li><br>
-</ul>
-
-</li>
-<li>Validation: 
-  <ul>
- <li>Inputs are checked to make certain they are integers (numbers) and not strings.</li> <br>
- 
-<li>If inputs are numbers treated as strings, the program parses them to integers.</li><br>
-<li>If inputs are text, the system will alert the user, "You must enter numbers."</li> <br>
-</ul>
-</li>
-<li>Logic: 
-  <p>Within the "Generate Numbers" function, the following processes occur:
-  </p>
-    <ul>
-   <li>the "numbers" array is created</li> <br>
-   
-  <li>the "for" loop passes the start value and increments the number by one </li><br>
-  <li>the produced number is pushed to the "numbers" array.</li><br>
-  
-  <li>Meanwhile, produced numbers are re-introduced into the loop until the incremented number is equal to the End Value</li><br>
-  <li>the function returns the "numbers" array.</li><br>
-  </ul>
-  
-  </li>
-   
-</ul>
-
-</li>
-<ul>
-<li>Display: 
-  <ul>
- <li>Inside the "for" loop: </li> <br>
- <ul>
-<li>A boolean tests each number in the "numbers" array by dividing each number by 2 to determine whether the number is even. </li><br>
-<li>Numbers testing "true" are bolded.</li><br>
-<li>Numbers testing "false" are not bolded.</li><br>
-</ul>
-<li> "Template Rows" varible injects the "Number" varible (from the "Display Numbers" function) into the template literal </li><br>
-<li>Finally, "Template Rows" are published to the HTML via the "results" class</li><br>
-</ul>
-</ul>
-</li>
-            </ul>
-          </div>
+    
         </div>
       </div>
     </main>
