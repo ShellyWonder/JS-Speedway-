@@ -85,15 +85,17 @@
     <!--Main section-->
     <main class="flex-shrink-0">
       <div class="container fluid">
-        <h2 class="border-1 border-bottom border-dark mt-3">Contact SJ</h2>
-        <div class="row mt-4">
+        <div class="row">
+        <h2 class="border-1 border-bottom border-dark mt-3 mb-4">Contact SJ</h2>
+      </div>
+        <div class="row ">
           <!--Contact form-->
-          <div class="col-12" id="form">
+          <div class="col-12 pt-3 pb-3" id="form">
             <form
             action="POST"
             data-netlify="true"
             enctype="text/plain"
-            
+                       
           >
             <div class="row mb-1">
               <div class="col">
@@ -144,15 +146,16 @@
             </div>
             <div class="row mb-1">
               <div class="col">
+                
                 <label class="form-label">Subject</label>
-                <input
-                  type="text"
-                  name="subject"
-                  class="form-control"
-                  placeholder="Subject"
-                  aria-label="Subject"
-                 
-                />
+                <select class="form-select" aria-label="Message">
+                  <option selected>Choose one. . .</option>
+                  <option value="1">We want SJ to attend our bootcamp!</option>
+                  <option value="2">The many virtues of tacos</option>
+                  <option value="3">Just wanted to say "Hi"</option>
+                  <option value="3">Other</option>
+
+                </select>
               </div>
             </div>
             <div class="row mb-1">
@@ -180,13 +183,20 @@
                   ></input>
                 </div>
                
-                <div class="col-8 justify-content-end" data-netlify-recaptcha="true"></div>
+                <div class="col-8  d-flex justify-content-end" data-netlify-recaptcha="true"></div>
             </div>
+            <div class="row">
+              <div class="col-6 d-flex justify-content-start">
             <button type="submit" class="btn btn-dark mt-2">Send message</button>
+          </div>
+          <div class="col-6 d-flex justify-content-end">
+            <h2>Thank you!</h2>
+          </div>
+          </div>
           </form>
             
           </div>
-          <!--CODE EXPLANATION-->
+          
     
         </div>
       </div>
